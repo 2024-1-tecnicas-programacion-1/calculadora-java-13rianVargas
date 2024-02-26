@@ -56,6 +56,13 @@ public class CalculadoraTest {
         double valorActual = Calculadora.calcular(10, 3, '%');
         assertEquals(valorEsperado, valorActual);
     }
+    
+    @Test
+    public void testRaiz() {
+        double valorEsperado = 9.0;
+        double valorActual = Calculadora.calcular(81, 2, 'r');
+        assertEquals(valorEsperado, valorActual);
+    }
 
     @Test
     public void testOperacionInvalida() {
